@@ -1,12 +1,13 @@
 {
   "name": "mock-one-app",
   "version": "0.0.0",
-  "server": false,
+  "server": true,
   "private": true,
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "npm run clean && NODE_ENV=production webpack && gulp prod",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "start": "node server"
   },
   "dependencies": {
     "file-loader": "latest",
@@ -29,7 +30,14 @@
     "stripe": "latest",
     "superagent": "latest",
     "turbo360": "latest",
-    "webpack": "latest"
+    "webpack": "latest",
+    "express": "latest",
+    "morgan": "latest",
+    "serve-favicon": "latest",
+    "client-sessions": "latest",
+    "hjs": "latest",
+    "hogan-middleware": "latest",
+    "jsonwebtoken": "latest"
   },
   "devDependencies": {
     "babel-core": "latest",
