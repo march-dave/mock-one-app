@@ -44,3 +44,20 @@ var a = obj.a,
     b = obj.b,
     c = obj.c;
 
+
+[Default parameters]
+const printAnimal = (animal = 'cat') => {
+    console.log(animal)
+}
+pinrtAnimal()
+printAnimal('dog')
+
+[Babel Code]
+var printAnimal = function printAnimal() {
+     var animal = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'cat';
+
+     console.log(animal);
+}
+
+printAnimal();
+printAnimal('dog');
