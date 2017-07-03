@@ -72,3 +72,6 @@ git add .
 git commit -m "react-create-app on Heroku"
 git push heroku master
 heroku open
+
+# in ./Profile
+web: node server.js NODE_ENV=production
