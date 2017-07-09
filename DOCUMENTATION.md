@@ -205,3 +205,18 @@ module.exports = {
         }
     }
 }
+
+// Base component
+
+import React from 'react'
+
+export default class App extends React.Compoent {
+
+  render() {
+    return (
+      <div>
+        <h1>Change me</h1>
+      <div>
+    )
+  }
+}
