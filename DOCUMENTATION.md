@@ -220,3 +220,12 @@ export default class App extends React.Compoent {
     )
   }
 }
+
+h1 {
+  color: blue;
+}
+
+"scripts": {
+  "build": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors",
+  "start": "node ./src/app.js"
+}
