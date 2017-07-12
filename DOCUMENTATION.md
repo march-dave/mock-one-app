@@ -229,3 +229,33 @@ h1 {
   "build": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors",
   "start": "node ./src/app.js"
 }
+
+var config = {
+   entry: './main.js',
+	
+   output: {
+      path:'./',
+      filename: 'index.js',
+   },
+	
+   devServer: {
+      inline: true,
+      port: 8080
+   },
+	
+   module: {
+      loaders: [
+         {
+            test: /\.jsx?$/,
+            exclude: /node_modules/,
+            loader: 'babel',
+				
+            query: {
+               presets: ['es2015', 'react']
+            }
+         }
+      ]
+   }
+}
+
+module.exports = config;
