@@ -259,3 +259,20 @@ var config = {
 }
 
 module.exports = config;
+
+"start": "webpack-dev-server --hot"
+
+<!DOCTYPE html>
+<html lang = "en">
+
+   <head>
+      <meta charset = "UTF-8">
+      <title>React App</title>
+   </head>
+
+   <body>
+      <div id = "app"></div>
+      <script src = "index.js"></script>
+   </body>
+
+</html>
